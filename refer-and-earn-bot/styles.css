@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #fff;
+  }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .app-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-top: 10px;
+  }
+  
+  .gif-container {
+    margin-top: 20px;
+  }
+  
+  #canvas-container {
+    display: inline-block;
+    position: relative;
+  }
+  
+  #canvas {
+    border-radius: 8px;
+    max-width: 100%;
+    background: rgba(0,0,0,0.8);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  button {
+    background: linear-gradient(45deg, #ff0099, #ff66cc);
+    border: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(45deg, #ff66cc, #ff0099);
+    transform: scale(1.1);
+  }
+  
+  .upload-label {
+    background: linear-gradient(45deg, #ff0099, #ff66cc);
+    color: white;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+  }
+  
+  .upload-label:hover {
+    background: linear-gradient(45deg, #ff66cc, #ff0099);
+  }
+  
+  #upload {
+    display: none;
+  }
+  
